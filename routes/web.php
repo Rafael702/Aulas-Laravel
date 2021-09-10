@@ -27,6 +27,9 @@ use Illuminate\Support\Facades\Route;
 //});
 
 //Acionando a view Jogos digitar /jogos
-Route::get('/jogos', function(){
-        return view("jogos");
-});
+//Route::get('/jogos', function(){
+        //return view("jogos");
+//});
+
+
+Route::view('/jogos','jogos');
