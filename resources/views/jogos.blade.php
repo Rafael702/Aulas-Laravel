@@ -7,8 +7,13 @@
     <title>Testando o Laravel</title>
 </head>
 <body>
-    <h1>Exibicao da pagina de jogos</h1>
-
+    <h3>Exibicao da pagina de jogos</h3>
+    <hr>
+    <b>Nome do Jogo: </b> {{$nomeJogo}}
+    <br>
+    <b>Preço do Jogo: </b> {{$precoJogo}}
+    <br>
+    <b>Fornecedor(a) do Jogo: </b>{{$fornecedorJogo}}
 
 </body>
 </html>

@@ -36,7 +36,14 @@ use Illuminate\Support\Facades\Route;
 
 //A rota pode retornar um texto
 
-Route::get('/jogos', function(){
-    return "<h1>Página de Jogos</h1>";
+//Route::get('/jogos', function(){
+  //  return "<h1>Página de Jogos</h1>";
 
-});
+//});
+
+
+//passando parametro estatico para view 
+//Route::view('/jogos','jogos',['nomeJogo'=>'Fifa21']);
+
+//passando 2 ou mais parametros estáticos
+Route::view ('/jogos','jogos', ['nomeJogo'=>'Fifa 21', 'precoJogo'=>230, 'fornecedorJogo'=>'EASport']);
