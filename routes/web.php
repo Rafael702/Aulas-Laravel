@@ -32,4 +32,11 @@ use Illuminate\Support\Facades\Route;
 //});
 
 
-Route::view('/jogos','jogos');
+//Route::view('/jogos','jogos');
+
+//A rota pode retornar um texto
+
+Route::get('/jogos', function(){
+    return "<h1>Página de Jogos</h1>";
+
+});
